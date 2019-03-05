@@ -1,7 +1,7 @@
 class CreateTable < ActiveRecord::Migration
 
   def change
-    create_table :brand do |t|
+    create_table :brands do |t|
       t.string :name
     end
   end
