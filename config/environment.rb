@@ -1,5 +1,16 @@
-require 'bundler'
+# Setting up the application
+require 'bundler/setup'
+
 Bundler.require
 
-ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/development.db')
-require_all 'lib'
+require 'sinatra/activerecord'
+
+ActiveRecord::Base.establish_connection(
+  adapter: 'sqlite3',
+  database: "db/cocktail.db"
+)
+
+require_all 'app'
+require 'json'
+require 'rake'
+load './Rakefile'

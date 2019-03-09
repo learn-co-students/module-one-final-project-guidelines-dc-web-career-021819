@@ -1,5 +1,4 @@
 require_relative '../config/environment'
 
-
-
-puts "HELLO WORLD"
+CocktailApp.welcome
+CocktailApp.front_menu
