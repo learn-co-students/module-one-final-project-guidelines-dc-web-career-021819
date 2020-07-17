@@ -1,3 +1,4 @@
+require 'rake'
 require 'bundler'
 Bundler.require
 
